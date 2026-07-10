@@ -99,10 +99,12 @@ void print7(int n)
         cout << endl;
     }
 }
+
+
 int main()
 {
-    int n = 5;
-
+    int n = 10;
+ print6(n);
     print7(n);
 
     return 0;
