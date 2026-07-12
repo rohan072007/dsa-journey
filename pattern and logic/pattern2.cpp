@@ -196,18 +196,43 @@ void print14(int n){
 
 void print15(int n){
     int a=65;
-    for(int i=0;i<=n;i++){
-        for(int j=i;j<=n;j++){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
             cout<<char(a)<<" ";
            
         }
         a++;
         cout<<endl;
     }
-}int main()
+}
+void print16(int n){
+    
+    for(int i=0;i<n;i++){
+        //spaces
+        for(int j=0;j<n-i-1;j++){
+            cout<<" ";
+        }
+        
+        //letters
+        int aplha=65;
+        int breakpoint = (2*i+1)/2;
+           for(int j=1;j<=(2*i)+1;j++){
+            cout<<(char)aplha;
+            if (j<=breakpoint) aplha++;
+            else aplha--;
+        }
+        
+        //spaces
+        for(int j=0;j<n-i-1;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
+int main()
 {
     int n = 5;
-    print14(n);
+    print16(n);
     
 
     return 0;
