@@ -3,7 +3,7 @@ using namespace std;
 void print(int n)
 {
     int initial = 0;
-    int final = 10-2;
+    int final = 2*(n-1);
     for (int i = 0; i < n; i++)
     {
         // stars

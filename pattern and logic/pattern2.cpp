@@ -232,7 +232,7 @@ void print16(int n){
 int main()
 {
     int n = 5;
-    print16(n);
+    print8(n);
     
 
     return 0;
